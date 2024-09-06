@@ -4,6 +4,7 @@ import { atom, useRecoilValue } from "recoil";
 import { Card, CardContent } from "./ui/card";
 import { cn } from "@/lib/utils";
 import { useEffect, useRef } from "react";
+import { ScrollArea } from "./ui/scroll-area";
 
 interface Message {
   sender: "user" | "ducky";
@@ -26,20 +27,20 @@ export default function Messages() {
   }, [messages]);
 
   return (
-    <div className="flex max-h-64 flex-col gap-2 overflow-scroll">
+    <ScrollArea className="flex max-h-64 flex-col">
       {messages.map((message) => (
         <Card
           key={message.content}
           className={cn(
-            "w-[80%] rounded-bl-none",
+            "mb-2 w-[80%] rounded-bl-none",
             message.sender === "user" &&
-              "self-end rounded-bl-lg rounded-br-none",
+              "ml-auto rounded-bl-lg rounded-br-none",
           )}
         >
-          <CardContent className="pt-6">{message.content}</CardContent>
+          <CardContent className="p-3">{message.content}</CardContent>
         </Card>
       ))}
       <div ref={messagesEndRef} />
-    </div>
+    </ScrollArea>
   );
 }
