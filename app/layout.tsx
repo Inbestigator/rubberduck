@@ -6,6 +6,22 @@ import Providers from "./providers";
 
 export const metadata: Metadata = {
   title: "Rubberduck",
+  description:
+    "Have a conversation with this nice duck to help work out a solution to your problem.",
+  openGraph: {
+    title: "Rubberduck",
+    description:
+      "Have a conversation with this nice duck to help work out a solution to your problem.",
+    images: [
+      {
+        url: "https://rubberduck.dev/api/og",
+        width: 1280,
+        height: 720,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
 };
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });

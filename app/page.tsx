@@ -25,7 +25,7 @@ export default function Page() {
       </div>
       <Messages />
       <Input />
-      <footer className="text-center text-sm text-blue-500/20">
+      <footer className="text-center text-sm text-blue-500/30">
         <p>Made with ❤️ by Inbestigator </p>
         <p>Duck svg by lavarmsg</p>
       </footer>
