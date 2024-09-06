@@ -8,7 +8,7 @@ import Messages from "@/components/messages";
 export default function Page() {
   return (
     <div className="flex h-full w-full max-w-96 flex-col gap-4">
-      <div className="relative p-24">
+      <div className="unselectable relative p-24">
         <Image
           className="absolute inset-0 animate-[spin_60s_linear_infinite] rounded-full mix-blend-multiply"
           src={Beams as string}
