@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       "Have a conversation with this nice duck to help work out a solution to your problem.",
     images: [
       {
-        url: "https://rubberduck.dev/api/og",
+        url: "https://rubberduck.dev/image.jpg",
         width: 1280,
         height: 720,
       },
