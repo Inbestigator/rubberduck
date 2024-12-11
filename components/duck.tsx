@@ -83,6 +83,7 @@ export default function Duck() {
     <div
       onPointerDown={handleMouseDown}
       onPointerUp={handleMouseUp}
+      title="Squeeze me!"
       className="relative z-10 aspect-square size-full cursor-grab bg-[url('/duck.svg')] bg-center bg-no-repeat transition-all active:scale-x-90 active:scale-y-75 active:cursor-grabbing"
     />
   );
